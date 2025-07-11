@@ -1,0 +1,126 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fefaf1;
+  color: #333;
+}
+header {
+  background: #d4af37;
+  text-align: center;
+  padding: 1rem;
+}
+header h1 {
+  color: #000;
+}
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+.hero {
+  background: url("https://lucknavikurtiblog.wordpress.com/wp-content/uploads/2025/07/whatsapp-image-2025-07-05-at-10.33.54-am-2.jpeg") no-repeat center;
+  background-size: cover;
+  padding: 4rem 1rem;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 3px #000;
+}
+.hero h2 {
+  font-size: 2.2rem;
+}
+.hero p {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+.gallery {
+  padding: 2rem;
+  background: #fff8e1;
+  text-align: center;
+}
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.product-grid img {
+  width: 230px;
+  height: 320px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.contact {
+  padding: 2rem;
+  background: #f6e7b8;
+  text-align: center;
+}
+.contact a {
+  color: #000;
+  text-decoration: none;
+}
+.whatsapp-btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #25D366;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #d4af37;
+  color: #000;
+}
+.popup-form {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.form-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+.form-box h2 {
+  margin-bottom: 1rem;
+}
+.form-box input {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.form-box button {
+  background: #d4af37;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
